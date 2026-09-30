@@ -181,9 +181,8 @@ section {
   border-color: #aaa;
 }
 
-/* =========================
-   Tablet
-========================= */
+/* Tablet */
+
 @media (max-width: 1502px) {
     .dishes {
         grid-template-columns: repeat(2, 300px);
@@ -200,9 +199,7 @@ section {
 }
 
 
-/* =========================
-   Mobile
-========================= */
+   /* Mobile */
 @media (max-width: 700px) {
     section {
         min-height: 100vh;
@@ -265,9 +262,7 @@ section {
 }
 
 
-/* =========================
-   Small Mobile
-========================= */
+/* Small Mobile  */
 @media (max-width: 400px) {
     .dish {
         width: 280px;
@@ -287,8 +282,6 @@ section {
     .buying button {
         padding: 8px 18px;
     }
-}
-@media (max-width:399px) {
     .dots {
         display: none;
     }
