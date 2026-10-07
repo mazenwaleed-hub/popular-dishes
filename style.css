@@ -69,7 +69,141 @@ nav .pages-bts button.active {
 nav .pages-bts button i {
     margin: 0px 10px;
 }
+.bars {
+    font-size: 1em;
+    display: none;
+}
+@media (max-width: 1000px) {
+  nav {
+    padding: 0 40px;
+    font-size: 22px;
+  }
 
+  nav .pages-bts button {
+    margin: 15px;
+  }
+}
+
+
+/* ================= MOBILE HEADER ================= */
+
+@media (max-width: 700px) {
+
+  header {
+    height: 80px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  nav {
+    padding: 0 25px;
+    height: 100%;
+    position: relative;
+  }
+
+  /* Logo */
+  nav .logo {
+    font-size: 20px;
+  }
+
+  nav .logo i {
+    font-size: 1.3em;
+  }
+
+  nav .logo h2 {
+    font-size: 1em;
+    margin-left: 7px;
+  }
+
+  /* Bars */
+  .bars {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  /* Menu - closed */
+  nav .pages-bts {
+    display: none;
+  }
+
+  /* Menu - opened */
+  nav .pages-bts.show {
+    display: flex;
+    position: absolute;
+    top: 75px;
+    right: 20px;
+
+    width: 220px;
+    padding: 15px;
+
+    flex-direction: column;
+    align-items: stretch;
+    gap: 5px;
+
+    background-color: #fdfcfc;
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+
+    z-index: 100;
+  }
+
+  nav .pages-bts.show button {
+    width: 100%;
+    margin: 0;
+    padding: 12px 15px;
+
+    text-align: left;
+    font-size: 16px;
+
+    border-radius: 10px;
+  }
+
+  nav .pages-bts.show button:hover,
+  nav .pages-bts.show button.active {
+    background-color: #54614470;
+    border-radius: 10px;
+  }
+
+  nav .pages-bts.show button i {
+    margin: 0 8px 0 0;
+  }
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 400px) {
+
+  header {
+    height: 70px;
+  }
+
+  nav {
+    padding: 0 15px;
+  }
+
+  nav .logo {
+    font-size: 18px;
+  }
+
+  .bars {
+    font-size: 21px;
+  }
+
+  nav .pages-bts.show {
+    top: 65px;
+    right: 15px;
+    width: 200px;
+    padding: 12px;
+  }
+
+  nav .pages-bts.show button {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+}
 /* dishes */
 #dishes {
   width: 100%;

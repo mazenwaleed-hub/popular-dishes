@@ -1,8 +1,13 @@
+let bars = document.querySelector(".bars")
+let navBtns = document.querySelector(".pages-bts")
 let dishesSec = document.querySelector(".dishes");
 let dotsSec = document.querySelector(".dots");
 let limit = 4;
 let skip = 0;
 let total = 0;
+bars.addEventListener('click', () => {
+  navBtns.classList.toggle("show")
+})
 document.getElementById("next").addEventListener("click", () => {
   skip += 4;
   GetRecipes();
